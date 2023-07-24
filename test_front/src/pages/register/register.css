@@ -1,0 +1,26 @@
+.Register {
+    width: 500px;
+    height: 500px;
+    border: 1px solid;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box input {
+    width: 250px;
+    height: 20px;
+    margin: 10px;
+}
+
+.box select {
+    margin: 20px 10px;
+}
+
+.btn-box {
+    margin: 30px 10px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
