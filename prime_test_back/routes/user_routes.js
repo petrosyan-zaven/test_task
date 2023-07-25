@@ -5,6 +5,7 @@ function user_route(app) {
 
     app.post('/register', user_controller.register);
     app.post('/login', user_controller.login);
+    app.get('/users', user_controller.allUsers)
     app.get('/user/:id', user_controller.userById)
 }
 

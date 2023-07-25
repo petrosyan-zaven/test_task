@@ -41,7 +41,7 @@ function SigneIn() {
     };
 
     return (
-        <div>
+        <div className='google-btn'>
             {profile ? (
                 <div>
                     <button onClick={logOut}>Log out</button>

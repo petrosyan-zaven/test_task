@@ -73,12 +73,13 @@ function Login() {
                   />
             </label>         
         </div> 
+        <SigneIn />
+
         <div className='btn-box'>
              <button className='btn-login'>Login</button>
              <Link className='register-btn' to={'/register'}>Register</Link>
              
         </div>
-        <SigneIn />
       </form>
     </div>
   )

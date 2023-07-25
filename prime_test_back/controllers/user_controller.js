@@ -71,6 +71,16 @@ async function login(req, res) {
 
   //extra  
 
+  async function allUsers(req, res) {
+
+    try {
+      const user = await User.findAll()
+      res.status(201).json(user);
+    } catch (error) {
+      res.status(500).json({ error: err.message });
+    }
+  }
+
   async function userById(req, res) {
     const { id } = req.params;
     try {
@@ -97,4 +107,4 @@ async function login(req, res) {
   }
   
 
-module.exports = { register, login, userById, updateUser };
+module.exports = { register, login,allUsers, userById, updateUser };
